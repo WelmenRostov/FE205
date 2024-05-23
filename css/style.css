@@ -34,8 +34,18 @@ button{
     align-items: center;
     flex-basis: content;
     white-space: nowrap; /* Запрещаем перенос строк */
-    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    overflow: scroll; /* Обрезаем все, что не помещается в область */
     text-overflow: ellipsis; /* Добавляем многоточие */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.great-navigation::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.great-navigation::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 .great-navigation__repeir, .great-navigation__1, .great-navigation__2, .great-navigation__3, .great-navigation__4, .great-navigation__5{
     font-size: 16px;
