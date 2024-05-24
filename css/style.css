@@ -5,6 +5,7 @@ body{
     font-family: 'TT Lakes Compressed Medium', sans-serif;
     background-color: #F8F8F8;
     min-width: 320px;
+    position: relative;
 }
 button{
     padding: 0;
@@ -15,8 +16,37 @@ button{
     display:block;
     cursor:pointer;
 }
-/* Header */
+/* Меню по кнопке */
+@keyframes open-menu__status{
+    0%  {
+        width:0;
+    }
+    100% {
+        width: 320px;
+    }
+}
+.open-menu{
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 1024px;
+    background-color: black;
+    z-index: 2;
+    animation: open-menu__status 1s cubic-bezier(0.1,0.25,0.1,1) 0s 1 alternate both;
+    display: none;
+}
+.open-menu:target + .open-menu__one-block {
 
+    display: block;
+}
+#main:target p{
+    display: block;
+}
+#main:target + #click{
+    display: none;
+}
 /*h1*/
 .navigation__top-heading{
     font-family: 'TT Lakes', sans-serif;
@@ -149,39 +179,39 @@ button{
         border-bottom: 1px solid;
         border-color: #41F6D7;
     }
-    .manu{
+    .menu{
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         height: 100%;
         align-items: center;
     }
-    .manu__block-smartphone{
+    .menu__block-smartphone{
         display: flex;
         justify-content: space-around;
         flex-direction: row;
         height: 100%;
         align-items: center;
     }
-    .manu__block-tablet{
+    .menu__block-tablet{
         display: flex;
         justify-content: space-around;
         flex-direction: row;
         align-items: center;
     }
-    .manu__block-tablet{
+    .menu__block-tablet{
         gap: 16px;
     }
-    .manu__block-smartphone{
+    .menu__block-smartphone{
         margin-left: 16px;
     }
-    .manu__button-burger{
+    .menu__button-burger{
         margin-right: 16px;
     }
-    .manu__checkstatus{
+    .menu__checkstatus{
         margin-right: 16px;
     }
-    .manu__profile{
+    .menu__profile{
         margin-right: 16px;
     }
     .navigation__top-heading:before {
@@ -212,7 +242,7 @@ button{
     }
 }
 @media (max-width: 320px) {
-    .manu__repeir::before {
+    .menu__repeir::before {
         content: "";
         position: absolute;
         background-color: #EAEAEA;
@@ -257,7 +287,7 @@ button{
 }
 /*ОТ 768*/
 @media (min-width: 768px) and (max-width: 1119.9px){
-    .manu__repeir::before{
+    .menu__repeir::before{
         content: "";
         position: absolute;
         background-color: #EAEAEA;
@@ -312,7 +342,7 @@ button{
     }
 }
 @media (max-width: 767.9px) {
-    .content__text-history, .manu__profile, .manu__call, .manu__chat {
+    .content__text-history, .menu__profile, .menu__call, .menu__chat {
         position: absolute;
         width: 1px;
         height: 1px;
@@ -325,10 +355,10 @@ button{
     }
 }
 @media (min-width: 321px) {
-    .manu__void-icon{
+    .menu__void-icon{
         margin-left: 16px;
     }
-    .manu__button-burger::after{
+    .menu__button-burger::after{
         content: "";
         position: absolute;
         background-color: #EAEAEA;
@@ -340,11 +370,11 @@ button{
     }
 }
 @media (max-width: 1119.9px) {
-    .manu__button-burger{
+    .menu__button-burger{
         max-height: 160px;
         max-width: 312px;
     }
-    .manu__checkstatus-text, .manu__repeir-text {
+    .menu__checkstatus-text, .menu__repeir-text {
         position: absolute;
         width: 1px;
         height: 1px;
@@ -398,7 +428,7 @@ button{
         margin-top: 42px;
         margin-bottom: 8px;
     }
-    .manu__call, .manu__chat, .manu__profile,  .manu__block-smartphone{
+    .menu__call, .menu__chat, .menu__profile,  .menu__block-smartphone{
         position: absolute;
         width: 1px;
         height: 1px;
@@ -419,17 +449,17 @@ button{
          height:1px;
          border-bottom: none;
      }
-    .manu__block-tablet{
+    .menu__block-tablet{
         display: flex;
         position: absolute;
         right: 32px;
         gap: 32px;
         top:42px
     }
-    .manu__repeir, .manu__checkstatus{
+    .menu__repeir, .menu__checkstatus{
         text-decoration: none;
     }
-    .manu__repeir, .manu__checkstatus {
+    .menu__repeir, .menu__checkstatus {
         display: flex;
         align-items: center;
         gap: 8px;
