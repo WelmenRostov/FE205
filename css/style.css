@@ -2,6 +2,7 @@
 :root {
     --button-color: #FF3E79;
     --frames-color: #41F6D7;
+    --gray-activeButton: #7E7E82;
 }
 body{
     padding: 0;
@@ -33,37 +34,6 @@ button{
 
 .manu__circle > img{
     position: relative;
-}
-/* Меню по кнопке */
-@keyframes open-menu__status{
-    0%  {
-        width:0;
-    }
-    100% {
-        width: 320px;
-    }
-}
-.open-menu{
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 320px;
-    height: 1024px;
-    background-color: black;
-    z-index: 2;
-    animation: open-menu__status 1s cubic-bezier(0.1,0.25,0.1,1) 0s 1 alternate both;
-    display: none;
-}
-.open-menu:target + .open-menu__one-block {
-
-    display: block;
-}
-#main:target p{
-    display: block;
-}
-#main:target + #click{
-    display: none;
 }
 /*h1*/
 .navigation__top-heading{
@@ -105,7 +75,7 @@ button{
     font-family: 'TT Lakes', sans-serif;
     text-decoration: none;
     background-color: #F8F8F8;
-    color: #7E7E82;
+    color: var(--gray-activeButton);
     letter-spacing: -0.2px;
 }
 .great-navigation__repeir{
@@ -507,5 +477,7 @@ button{
         .content{
             padding-top: 24px;
         }
-        }
+    }
 }
+
+/* Меню по кнопке */

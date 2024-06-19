@@ -2,7 +2,7 @@
 <html lang="ru">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="shortcut icon" href="pictures/logo/img_logo.png" />
     <title>CPS</title>
@@ -11,12 +11,14 @@
     <header>
         <nav class="menu">
             <div class="menu__block-smartphone">
-                <button type="button" class="menu__button-burger">
+                <button type="button" class="menu__button-burger" onclick="(document.getElementById('open-menu').style.display='block')">
                     <span class="manu__circle">
                         <img src="pictures/header/menu__burger.svg" alt="Меню">
                     </span>
                 </button>
-                <button type="button" class="menu__void-icon"><img src="pictures/header/menu__void-icon.svg" alt="Логотип"></button>
+                <button type="button" class="menu__void-icon">
+                    <img src="pictures/header/menu__void-icon.svg" alt="Логотип">
+                </button>
             </div>
             <div class="menu__block-tablet">
                 <a class="menu__call" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
@@ -46,13 +48,61 @@
             </div>
         </nav>
     </header>
-    <div class="open-menu open-menu__status">
-        <div class="open-menu__one-block">
-            <button type="button" class="open-menu__x-button">Закрыть меню<img src="pictures/header/menu__burger.svg" alt="Иконка из 3х полос">Развернуть меню</button>
-            <button type="button" class="open-menu__void-icon"><img src="pictures/header/menu__void-icon.svg" alt="Логотип 3 буквы CSP"></button>
+    <div id="open-menu" class="open-menu open-menu__status">
+        <div class="open-menu__block-header open-menu__block-header-position">
+            <div class="open-menu__block-one">
+                <button onclick="(document.getElementById('open-menu').style.display='none')">
+                    <div class="manu__circle">
+                        <img src="pictures/open-menu/menu__close.svg" alt="Лупа над дткументом">
+                    </div>
+                </button>
+                <button>
+                    <img src="pictures/header/menu__void-icon.svg" alt="Логотип">
+                </button>
+            </div>
+            <div class="open-menu__block-two">
+                <a>
+                    <div class="manu__circle">
+                        <img src="pictures/open-menu/menu__checkstatus.svg" alt="Лупа над дткументом">
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="open-menu__two-block">
-            <a class="open-menu__checkstatus" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">Проверитт статус заказа<span class="open-menu__checkstatus-text"></span><img src="pictures/header/menu_checkstatus.svg" alt="Картинка лупа над документом"></a>
+        <div class="open-menu__block-naw">
+            <a>Ремонт техники</a>
+            <a>Услуги и сервисы</a>
+            <a>Корпоративным клиент</a>
+            <a>Продавцам техники</a>
+            <a>Партнерам</a>
+            <a>Производителям</a>
+            <a>Наши сервисные центр</a>
+            <a>Контакты</a>
+        </div>
+        <div class="open-menu__footer">
+            <div class="open-menu__footer__info">
+                <a>
+                    <button class="manu__circle">
+                        <img src="pictures/header/menu_call.svg" alt="Лупа над дткументом">
+                    </button>
+                </a>
+                <a>
+                    <button class="manu__circle">
+                        <img src="pictures/header/menu_chat.svg" alt="Лупа над дткументом">
+                    </button>
+                </a>
+                <a>
+                    <button class="manu__circle">
+                        <img src="pictures/header/menu_profile.svg" alt="Лупа над дткументом">
+                    </button>
+                </a>
+            </div>
+            <p>mail@cps.com</p>
+            <p>8 800 890 8900</p>
+            <div class="open-menu__footer__language">
+                <button>RU</button>
+                <button>EN</button>
+                <button>CH</button>
+            </div>
         </div>
     </div>
     <section class="navigation navigation_position">
