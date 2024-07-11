@@ -1,0 +1,28 @@
+.company-group__block-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.company-group__block-content__element {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 224px;
+    height: 72px;
+    border: 1px black solid;
+}
+.company-group__block-content__element img {
+    margin-left: 16px;
+    overflow: auto;
+    max-height: 80%;
+    object-fit: contain;
+    border: 1px black solid;
+}
+
+.company-group__block-content__element button {
+    max-width: 100%;
+    border: 1px black solid;
+    margin-right: 16px;
+}

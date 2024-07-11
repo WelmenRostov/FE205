@@ -21,6 +21,7 @@ button{
     display:block;
     cursor:pointer;
 }
+.company-group__block-content__element__button > div,
 .manu__circle {
     width: 40px;
     height: 40px;
@@ -481,3 +482,48 @@ button{
 }
 
 /* Меню по кнопке */
+.company-group__block-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 32px;
+}
+.company-group__poisition{
+    margin-left: 16px;
+}
+.company-group__text{
+    height: 56px;
+    color: #7E7E82;
+    background: linear-gradient(0.25turn,#F8F8F8, #FFFFFF);
+}
+.company-group__text p{
+    margin: 0;
+    padding-top: 15px;
+}
+.company-group__block-content__element {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 224px;
+    height: 72px;
+    background-color: #FFFFFF;
+    border: 1px #EAEAEA solid;
+    border-radius: 6px;
+    margin-top: 16px;
+}
+.company-group__block-content__element > img {
+    margin-left: 16px;
+    overflow: auto;
+    margin-right: 42px;
+    max-height: 80%;
+    object-fit: contain;
+}
+.company-group__block-content__element > a{
+    margin-right: 16px;
+}
+.company-group__block-content__element > a > div > img {
+    width: 40px;
+    height: 40px;
+}
