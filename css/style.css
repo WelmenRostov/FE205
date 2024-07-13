@@ -332,7 +332,7 @@ button{
     }
 }
 @media (max-width: 767.9px) {
-    .content__text-history, .menu__profile, .menu__call, .menu__chat {
+     .content__text-history, .menu__profile, .menu__call, .menu__chat {
         position: absolute;
         width: 1px;
         height: 1px;
@@ -474,20 +474,30 @@ button{
     .content__button_position{
         padding-top: 14px;
     }
-    @media (min-width: 1132px){
-        .content{
-            padding-top: 24px;
-        }
+}
+@media (min-width: 1132px){
+    .content{
+        padding-top: 24px;
     }
 }
-
 /* Меню по кнопке */
 .company-group__block-content{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 16px;
-    column-gap: 32px;
+    column-gap: 24px;
+    margin-top: 16px;
+    overflow: hidden;
+    width: 100%;
+    height: 170px;
+    transition: height 3s;
+}
+.copmanyGroupnoAuto {
+    height: 255px;
+}
+.company-group__button{
+
 }
 .company-group__poisition{
     margin-left: 16px;
@@ -511,8 +521,8 @@ button{
     background-color: #FFFFFF;
     border: 1px #EAEAEA solid;
     border-radius: 6px;
-    margin-top: 16px;
 }
+
 .company-group__block-content__element > img {
     margin-left: 16px;
     overflow: auto;
@@ -526,4 +536,54 @@ button{
 .company-group__block-content__element > a > div > img {
     width: 40px;
     height: 40px;
+}
+.swiper{
+    margin-top: 16px;
+}
+.swiper-wrapper{
+    margin-bottom: 45px;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #B5B6BC;
+ }
+@media (min-width: 767.9px){
+    .swiper{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+        /*display: none;*/
+    }
+}
+@media (max-width: 767.9px) or (min-width: 1488px){
+    .company-group__button{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+        /*display: none;*/
+    }
+}
+@media (max-width: 767.9px) {
+    .company-group__block-content{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+        /*display: none;*/
+    }
 }
