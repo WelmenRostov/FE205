@@ -108,6 +108,7 @@ button{
 }
 .content__block-text{
     margin: 0;
+    padding-bottom: 16px;
     overflow: auto;
     scrollbar-width: none;
     min-width: 288px;
@@ -240,9 +241,12 @@ button{
         border-radius: 1px;
 
     }
-    .content__block_position{
+    .content__block_position {
         margin-left: 16px;
         margin-top: 24px;
+    }
+    .company-group__poisition{
+        margin-left: 16px;
     }
 }
 @media (min-width: 321px) {
@@ -261,6 +265,9 @@ button{
         margin-left: 24px;
     }
     .content__block_position{
+        margin-left: 24px;
+    }
+    .company-group__poisition{
         margin-left: 24px;
     }
 }
@@ -401,10 +408,6 @@ button{
         border-radius: 8px;
         float: left;
     }
-    .content__block_position{
-        margin-top: 32px;
-        margin-right: 0;
-    }
     .content__text-information, .content__text-history{
 
         max-width: 490px;
@@ -430,6 +433,7 @@ button{
     }
     .content__block_position{
         margin-top: 8px;
+        margin-right: 0;
         margin-left: 34px;
     }
     header{
@@ -490,17 +494,14 @@ button{
     margin-top: 16px;
     overflow: hidden;
     width: 100%;
-    height: 170px;
+    height: 165px;
     transition: height 3s;
 }
 .copmanyGroupnoAuto {
-    height: 255px;
+    height: 253px;
 }
 .company-group__button{
 
-}
-.company-group__poisition{
-    margin-left: 16px;
 }
 .company-group__text{
     height: 56px;
@@ -548,6 +549,24 @@ button{
     height: 12px;
     background-color: #B5B6BC;
  }
+.company-group__button{
+    display: flex;
+}
+.company-group__button > img{
+    position: absolute;
+    padding-top: 20px;
+    transition: transform 1s ease;
+    transform-origin: 5px 25px;
+}
+.rotate {
+    transform-origin: 5px 25px;
+    transform: rotate(180deg);
+ }
+.company-group__button > p{
+    position: absolute;
+    margin-left: 17px;
+    width: 100px;
+}
 @media (min-width: 767.9px){
     .swiper{
         position: absolute;

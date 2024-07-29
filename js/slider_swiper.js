@@ -78,8 +78,3 @@ function swiperCard() {
 }
 swiperCard();
 window.addEventListener("resize", swiperCard);
-$(function(){
-    $("#open1").click(function(){
-        $("#portfolio").toggleClass('active')
-    });
-});

@@ -121,7 +121,7 @@
         </div>
         <article class="content content_position">
             <div class="content__block content__block_position">
-                <div class="content__block-text content__block-text_position">
+                <div id="content__block-text" class="content__block-text content__block-text_position">
                     <p class="content__text-information top-text">
                         Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                     </p>
@@ -129,7 +129,10 @@
                         Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
                     </p>
                 </div>
-                <button type="button" class="content__button content__button_position"><img src="pictures/body/content__button.svg" alt="Иконка стрелочки">Читать далее</button>
+                <button id="contentButton" type="button" class="company-group__button content__button" onclick="ButtonRead()">
+                    <p id="contentP">Читать далее</p>
+                    <img id="contentImg" src="pictures/body/content__button.svg" alt="Иконка стрелочки">
+                </button>
             </div>
             <div class="content__block-img content__block-img_form">
                 <img src="pictures/header/pictures.png" class="content__pictures-logo" alt="Картинка логотип компании на стене">
@@ -142,7 +145,7 @@
             <div id="companyGroup" class="company-group__block-content">
                 <div class="company-group__block-content__element">
                     <img src="pictures/company-group/company-group__lenovo.png">
-                    <a class="company-group__block-content__element__button">
+                    <a class="company-group__block-content__element__button" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                         <div class="manu__circle">
                             <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументом">
                         </div>
@@ -150,7 +153,7 @@
                 </div>
                 <div class="company-group__block-content__element">
                     <img src="pictures/company-group/company-group__sumsung.png">
-                    <a class="company-group__block-content__element__button">
+                    <a class="company-group__block-content__element__button" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                         <div class="manu__circle">
                             <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументо  м">
                         </div>
@@ -158,7 +161,7 @@
                 </div>
                 <div class="company-group__block-content__element">
                     <img src="pictures/company-group/company-group__apple.png">
-                    <a class="company-group__block-content__element__button">
+                    <a class="company-group__block-content__element__button" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                         <div class="manu__circle">
                             <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументом">
                         </div>
@@ -166,7 +169,7 @@
                 </div>
                 <div class="company-group__block-content__element">
                     <img src="pictures/company-group/company-group__viewsonic.png">
-                    <a class="company-group__block-content__element__button">
+                    <a class="company-group__block-content__element__button" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                         <div class="manu__circle">
                             <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументом">
                         </div>
@@ -174,7 +177,7 @@
                 </div>
                 <div class="company-group__block-content__element">
                     <img src="pictures/company-group/company-group__bosch.png">
-                    <a class="company-group__block-content__element__button">
+                    <a class="company-group__block-content__element__button" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                         <div class="manu__circle">
                             <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументом">
                         </div>
@@ -182,7 +185,7 @@
                 </div>
                 <div class="company-group__block-content__element">
                     <img src="pictures/company-group/company-group__hp.png">
-                    <a class="company-group__block-content__element__button">
+                    <a class="company-group__block-content__element__button" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                         <div class="manu__circle">
                             <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументом">
                         </div>
@@ -190,7 +193,7 @@
                 </div>
                 <div class="company-group__block-content__element">
                     <img src="pictures/company-group/company-group__acer.png">
-                    <a class="company-group__block-content__element__button">
+                    <a class="company-group__block-content__element__button" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                         <div class="manu__circle">
                             <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументом">
                         </div>
@@ -198,7 +201,7 @@
                 </div>
                 <div class="company-group__block-content__element">
                     <img src="pictures/company-group/company-group__sony.png">
-                    <a class="company-group__block-content__element__button">
+                    <a class="company-group__block-content__element__button" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                         <div class="manu__circle">
                             <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументом">
                         </div>
@@ -206,7 +209,7 @@
                 </div>
                 <div class="company-group__block-content__element">
                     <img src="pictures/company-group/company-group__xiaomi.png">
-                    <a class="company-group__block-content__element__button">
+                    <a class="company-group__block-content__element__button" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                         <div class="manu__circle">
                             <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументом">
                         </div>
@@ -214,7 +217,7 @@
                 </div>
                 <div class="company-group__block-content__element">
                     <img src="pictures/company-group/company-group__huawey.png">
-                    <a class="company-group__block-content__element__button">
+                    <a class="company-group__block-content__element__button" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                         <div class="manu__circle">
                             <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументом">
                         </div>
@@ -222,22 +225,23 @@
                 </div>
                 <div class="company-group__block-content__element">
                     <img src="pictures/company-group/company-group__jbl.png">
-                    <a class="company-group__block-content__element__button">
+                    <a class="company-group__block-content__element__button" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                         <div class="manu__circle">
                             <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументом">
                         </div>
                     </a>
                 </div>
             </div>
-            <button id="company-group__button" type="button" class="company-group__button content__button content__button_position" onclick="classToggle()">
-                <img src="pictures/body/content__button.svg" alt="Иконка стрелочки">Показать все
+            <button id="companyGroupButton" type="button" class="company-group__button content__button" onclick="classToggle()">
+                <p id="companyGroupP">Показать все</p>
+                <img id="foo" src="pictures/body/content__button.svg" alt="Иконка стрелочки">
             </button>
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="company-group__block-content__element">
                             <img src="pictures/company-group/company-group__lenovo.png">
-                            <a class="company-group__block-content__element__button">
+                            <a class="company-group__block-content__element__button" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                                 <div class="manu__circle">
                                     <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументом">
                                 </div>
@@ -247,7 +251,7 @@
                     <div class="swiper-slide">
                         <div class="company-group__block-content__element">
                             <img src="pictures/company-group/company-group__sumsung.png">
-                            <a class="company-group__block-content__element__button">
+                            <a class="company-group__block-content__element__button" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                                 <div class="manu__circle">
                                     <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументо  м">
                                 </div>
@@ -257,7 +261,7 @@
                     <div class="swiper-slide">
                         <div class="company-group__block-content__element">
                             <img src="pictures/company-group/company-group__apple.png">
-                            <a class="company-group__block-content__element__button">
+                            <a class="company-group__block-content__element__button" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                                 <div class="manu__circle">
                                     <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументом">
                                 </div>
@@ -268,7 +272,7 @@
                         <div class="company-group__block-content__element">
                             <img src="pictures/company-group/company-group__viewsonic.png">
                             <a class="company-group__block-content__element__button">
-                                <div class="manu__circle">
+                                <div class="manu__circle" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                                     <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументом">
                                 </div>
                             </a>
@@ -277,7 +281,7 @@
                     <div class="swiper-slide">
                         <div class="company-group__block-content__element">
                             <img src="pictures/company-group/company-group__bosch.png">
-                            <a class="company-group__block-content__element__button">
+                            <a class="company-group__block-content__element__button" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                                 <div class="manu__circle">
                                     <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументом">
                                 </div>
@@ -287,7 +291,7 @@
                     <div class="swiper-slide">
                         <div class="company-group__block-content__element">
                             <img src="pictures/company-group/company-group__hp.png">
-                            <a class="company-group__block-content__element__button">
+                            <a class="company-group__block-content__element__button" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                                 <div class="manu__circle">
                                     <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументом">
                                 </div>
@@ -297,7 +301,7 @@
                     <div class="swiper-slide">
                         <div class="company-group__block-content__element">
                             <img src="pictures/company-group/company-group__acer.png">
-                            <a class="company-group__block-content__element__button">
+                            <a class="company-group__block-content__element__button" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                                 <div class="manu__circle">
                                     <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументом">
                                 </div>
@@ -307,7 +311,7 @@
                     <div class="swiper-slide">
                         <div class="company-group__block-content__element">
                             <img src="pictures/company-group/company-group__sony.png">
-                            <a class="company-group__block-content__element__button">
+                            <a class="company-group__block-content__element__button" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                                 <div class="manu__circle">
                                     <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументом">
                                 </div>
@@ -317,7 +321,7 @@
                     <div class="swiper-slide">
                         <div class="company-group__block-content__element">
                             <img src="pictures/company-group/company-group__xiaomi.png">
-                            <a class="company-group__block-content__element__button">
+                            <a class="company-group__block-content__element__button" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                                 <div class="manu__circle">
                                     <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументом">
                                 </div>
@@ -327,7 +331,7 @@
                     <div class="swiper-slide">
                         <div class="company-group__block-content__element">
                             <img src="pictures/company-group/company-group__huawey.png">
-                            <a class="company-group__block-content__element__button">
+                            <a class="company-group__block-content__element__button" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                                 <div class="manu__circle">
                                     <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументом">
                                 </div>
@@ -337,7 +341,7 @@
                     <div class="swiper-slide">
                         <div class="company-group__block-content__element">
                             <img src="pictures/company-group/company-group__jbl.png">
-                            <a class="company-group__block-content__element__button">
+                            <a class="company-group__block-content__element__button" href="https://dzen.ru/?yredirect=true&clid=2270456&win=624">
                                 <div class="manu__circle">
                                     <img src="pictures/company-group/converted%20(21).svg" alt="Лупа над дткументом">
                                 </div>
